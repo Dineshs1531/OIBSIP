@@ -1,0 +1,518 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-font-smothing:antiquewhite;
+    box-sizing: border-box;
+}
+
+.row
+{
+    width: 100%;
+}
+.container
+{
+    width: 90%;
+    margin:1px;
+    
+    
+}
+/*---- common create some compents and design*/
+[class*="grid-"],[class*="sm-grid-"]
+{
+    float: left;
+    padding: 0 15px;
+
+}
+.grid-1
+{
+    width: 8.33%;
+}
+.grid-2
+{
+    width: 16.66%;
+}
+.grid-3
+{
+    width: 25%;
+}
+.grid-4
+{
+    width: 33.33%;
+}
+.grid-5
+{
+    width: 41.66%;
+}
+.grid-6
+{
+    width: 50%;
+}
+.grid-7
+{
+    width: 58.33%;
+}
+.grid-8
+{
+    width: 66.66%;
+}
+.grid-9
+{
+    width: 75%;
+}
+.grid-10
+{
+    width: 83.33%;
+}
+.grid-11
+{
+    width: 91.66%;
+}
+.grid-12
+{
+    width: 100%;
+}
+.gin
+{
+    background-color: rgb(189, 171, 148);
+    min-height:25px ;
+
+}
+.container::after,.row::after,header::after{
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    display: block;
+    content:" ";
+}
+/*------------------------------------------------------*/
+
+/*--common--*/
+
+
+.brand h1
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 700;
+    display: inline-flex
+    
+}
+.banner
+{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+header
+{
+    padding: 15px 0px;
+}
+header .brand
+{
+    width: 200px;
+    float: left;
+}
+
+header .nav li a
+{
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    display:inline-block;
+    text-decoration: none;
+    font-weight: 200;
+
+}
+header .nav li a:hover
+{
+    color:rgb(192, 219, 41);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    border-bottom: 3px solid rgb(245, 27, 27);
+
+}
+/*-------------------------------- ---------------------*/
+.text{
+    height: 100px;
+    width: 100%;
+   margin-top: 300px;
+}
+.location
+{
+    color:white;
+    font-size: 30px;
+    margin-left: 30px;
+}
+.location:hover{
+    color:yellow;
+}
+.hotel
+{
+    color:white;
+    margin-top: 10px;
+    font-size: 50px;
+    margin-left: 30px;
+}
+.hotel:hover{
+    color:yellow;
+    margin-left: 30px;
+}
+.con
+{
+    color:red;
+    margin-left: 30px;
+}
+.con:hover{
+    color:yellow
+}
+/*------------------*/
+
+.btn
+{
+    text-decoration: none;
+    background-color:  red;
+    text-transform: capitalize;
+    display: inline-block;
+    color:#FFF;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+.btn:focus
+{
+    outline: none;
+}
+/*--CONTENT-----------------*/
+.content
+    {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        
+        
+    }
+.content h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 35px;
+    padding-bottom: 10px;
+}
+.content h2::after
+{
+    content:'';
+    position: absolute;
+    height:3px;
+    width: 50px;
+    background-color:red;
+    bottom: 0;
+    left:50%;
+    margin-left: -25px;
+}
+/*
+.content .box .box-img{
+    
+    border:1px solid rgb(206, 28, 28);
+    background-color: rgb(66, 202, 13);
+    margin: 0 auto;
+}*/
+.box{
+    
+    width:100%;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10%;
+    border-color: black;
+}
+.contact-form
+{
+    background-color: lightgray;
+    padding: 30px 0px;
+}
+.contact-form form{
+    padding: 0px;
+    margin: 0px;
+}
+.contact-form form input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border:1px solid #ccc;
+}
+.contact-form form input:focus
+{
+    outline: none;
+}
+.contact-form form textarea{
+    width:100%;
+    height:100px;
+    outline: none;
+    padding: 15px;
+}
+textarea:focus
+{
+    background-color: rgb(235, 235, 183);
+    outline: none;
+
+}
+.contact-form form .primary-btn
+{
+    font-size: 25px;
+}
+footer{
+    width:100%;
+    height:50px;
+    background-color: rgb(155, 151, 151);
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+/**--creating a helper class **/
+.box-1
+{
+    background-image: url("../image/img1.jpg");
+}
+.box-2
+{
+    background-image: url("../image/img1.jpg");
+}
+.box-3
+{
+    background-image: url("../image/banner/img11.jpg");
+}
+/**/
+.text-center
+{
+    text-align: center;
+}
+.pt-xl
+{
+    padding-top: 30px;
+}
+.mt-xl
+{
+    margin-top: 30px;
+    
+}
+.text-right
+{
+    text-align: right;
+}
+.b1{
+    background-image: url("../image/div/p12.jpg");
+}
+.b2{
+    background-image: url("../image/div/image21.jpg");
+}
+.b3{
+    background-image: url("../image/div/h11.jpg");
+}
+
+/*-----------END COMMON STYLES-----*/
+/*-- ------------------------------------ MOBILE --------------------------------------*/
+/*------------------------------------------------------------------------------------*/
+@media(max-width:767px)
+{
+    /*nav=-----*/
+    .mobile-nav
+    {
+        display: block;
+        width: 36px;
+        height:25px;
+        float:right;
+    }
+    /*-- div li homwe serivces ... display take out from website*/
+    .mobile-nav .mn-stripe
+    {
+        display: block;
+        height: 2px;
+        width: 90%;
+        background-color: azure;
+        margin: 5px auto 0px auto;
+    }
+    /**/
+    header{
+        background-image: url("../image/new/i_4_767x800.jpg");
+        height: 800px;
+        width: 100%;
+    }
+    header .nav{
+        width: 100%;
+        display: none;
+        padding: 0px;
+        float: none;
+        list-style: none;
+
+    }
+    header .nav li{
+        
+        float:none
+    }
+    header .nav li:first-child
+    {
+        margin-top: 10px;
+    }
+    header .nav li a{
+        padding:5px 0px;
+    }
+    .mn-balancer{
+        clear: both;
+        visibility: hidden;
+        height: 0;
+        display: block;
+        content:" ";
+    }
+    /*--- end nav */
+    .banner
+    {
+        width: auto;
+        height:200px;
+        display: flex;
+        object-fit:cover;
+        
+    }
+    .banner h1{
+        margin-top: 100px;
+        margin-bottom: 5px;
+        font-size: 20px;
+        
+        
+    }
+    .grid-4{
+        width: 100%;
+    }
+    .push-grid-8
+    {
+        
+        margin-left: 330px;
+    }
+    .banner a
+    {
+        font-size: 15px !important;
+    }
+}
+
+/*--------------------------- TABLET ---------------------------------------*/
+
+/*---------------------------------------------------------------------------*/
+@media(min-width:768px)
+{
+    .container
+    {
+       margin:0px; 
+    }
+    header{
+        background-image: url("../image/new/i_5_768x800.jpg");
+        height: 800px;
+        width: 100%;
+    }
+    header .nav
+    {
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        float: right;
+    }
+    header .nav li
+    {
+        float: left;
+        margin: 1px;
+        text-transform:uppercase;
+        list-style: none;
+    }
+    header nav li a
+    {
+        padding: 2px 15px;
+    }
+    .banner
+    {
+        width: auto;
+        height:360px;
+        display: flex;
+        object-fit:cover;
+
+    }
+    .banner h1
+    {
+        font-size: 38px;
+        line-height: 38px;
+        margin-top: 110px;
+        margin-bottom: 20px;
+    }
+    .push-grid-8
+    {
+        margin-left: 79.66%;
+    }
+    /* --end banner-- */
+    /*--- start widget ----*/
+    .sm-pt-xl
+    {
+        padding-top: 30px;
+    }
+    .sm-grid-6
+    {
+        width: 50%;
+    }
+    .sm-grid-12
+    {
+        width:100%;
+    }
+}
+/*-- laptop small screen ---*/
+@media(min-width:992px)
+{
+    header{
+        background-image: url("../image/new/i_992x800.jpg");
+        height: 800px;
+        width: 100%;
+    }
+     
+    .banner
+    {
+        width: auto;
+        height:360px;
+        display: flex;
+        object-fit:cover;
+        
+    }
+    .banner h1{
+        margin-top: 120px;
+        margin-bottom: 25px;
+        font-size: 44px;
+        line-height: 44px;
+    }
+    .push-grid-8
+    {
+        margin-left: 75.66%;
+    }
+    /*---content----*/
+    
+    .grid-4{
+        width: 33.33%;
+    }
+    .sm-pt-xl
+    {
+        padding-top: 0px;
+    }
+}
+/*-- desktop ---*/
+@media(min-width:1200px)
+{
+    
+    .banner
+    {
+        width: auto;
+        height:360px;
+        display: flex;
+        object-fit:cover;
+        
+    }
+    header{
+        background-image: url("../image/new/i.jpg");
+        height: 800px;
+        width: 100%;
+    }
+}
